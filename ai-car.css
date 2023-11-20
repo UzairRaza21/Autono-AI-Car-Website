@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    height: 1000px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.nav-links{
+    padding: 10px;
+    width: 500px;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.nav-button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.hero-text{
+    margin-top: -600px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.251);
+}
+
+.sticky{
+    background-color: white;
+}
+
+.navscroll{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    margin-top: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.navline{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 2px;
+}
+
+
+
+/* .navbarshort{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: 300px;
+    width: 250px;
+    z-index: 999;
+    background-color: black;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.427);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.navbarshort a{
+    text-decoration: none;
+    color: white;
+} */
+
+
+
+@media screen and (max-width: 800px) {
+   .nav-links{
+    display: none;
+   }
+   .sidebar{
+    display: none;
+}
+
+.navbarshort{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.686);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.427);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    transition: all;
+    transition-duration: 5s;
+}
+.navbarshort a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+.navbarshort a:hover{
+    background-color: rgba(255, 255, 255, 0.352);
+}
+}
+
+@media screen and (min-width: 800px) {
+    .navscroll{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    
+}
