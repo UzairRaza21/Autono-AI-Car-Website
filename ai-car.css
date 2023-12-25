@@ -58,29 +58,6 @@ nav{
 }
 
 
-
-/* .navbarshort{
-    position: fixed;
-    top: 70px;
-    right: 0;
-    height: 300px;
-    width: 250px;
-    z-index: 999;
-    background-color: black;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.427);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-}
-.navbarshort a{
-    text-decoration: none;
-    color: white;
-} */
-
-
-
 @media screen and (max-width: 800px) {
    .nav-links{
     display: none;
@@ -101,8 +78,6 @@ nav{
     flex-direction: column;
     text-align: center;
     padding: 10px;
-    transition: all;
-    transition-duration: 5s;
 }
 .navbarshort a{
     text-decoration: none;
@@ -123,4 +98,57 @@ nav{
         display: none;
     }
     
+}
+
+.mid-section-2{
+    margin-top: 80px;
+   
+}
+.mid-section-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* background-color: bisque; */
+}
+
+
+.mid-section{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 824px;
+}
+.left-side{
+background-color: rgb(0, 0, 0);
+height: 500px;
+width: 100%;
+}
+.right-side{
+    height: 500px;
+    width: 100%;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid rgb(25, 25, 25);
+    border-radius: 10px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: all;
+    transition-duration: 1s;
+}
+.mid-section-4{
+    display: flex;
+    align-items: center;
+}
+
+.mid-section-6{
+    display: grid;
+    grid-template-columns: auto auto;
+
 }
